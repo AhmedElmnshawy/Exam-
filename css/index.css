@@ -1,0 +1,821 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  color: rgb(116, 129, 130);
+}
+#services .container > h3,
+#portfolio .container > h3,
+#clients .container > h3,
+#contact .container > h3,
+#team .container > h3 {
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  background-image: linear-gradient(#ffffff, #ffffff41), url(../imgs/dots.png);
+}
+
+/* +++++++++++++++++++++++ navbar  +++++++++++++++++++ */
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar li {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  color: black;
+  position: relative;
+}
+.navbar a.active::after {
+  left: 8;
+  width: 75%;
+}
+.navbar li a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 7px;
+  left: 8px;
+  transition: width 0.5s;
+}
+
+.navbar ul {
+  margin-right: 15px;
+}
+.navbar li a {
+  color: inherit;
+}
+.navbar {
+  --bs-navbar-active-color: var(--bs-black);
+  padding: 0;
+}
+.navbar-brand {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 75px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link.active::after,
+  .navbar-nav .nav-link.show::after {
+    width: 8%;
+    left: 46%;
+  }
+
+  .navbar-nav .nav-link::after {
+    transition: width 0s;
+  }
+
+  .navbar-nav .nav-link[href="#services"].active::after,
+  .navbar-nav .nav-link[href="#contact"].active::after,
+  .navbar-nav .nav-link[href="#services"].show::after,
+  .navbar-nav .nav-link[href="#contact"].show::after {
+    width: 11.5%;
+    left: 44%;
+  }
+
+  .navbar-collapse {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 5px -8px;
+  }
+}
+
+/* +++++++++++++++++ Header +++++++++++++++ */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+header .icon-header i {
+  background-color: black;
+  padding: 15px 11px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.home-f1 {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-f2 {
+  font-size: 60px;
+  line-height: 72px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.animation::before {
+  content: " Larry Daniels";
+  animation: designer 6.3s infinite;
+}
+
+@keyframes designer {
+  0% {
+    content: " Larry Daniels";
+  }
+  22.22% {
+    content: " Larry Daniels";
+  }
+  /* 0.33 */
+  22.55% {
+    content: " Larry Daniel";
+  }
+  22.88% {
+    content: " Larry Danie";
+  }
+  23.21% {
+    content: " Larry Dani";
+  }
+  23.54% {
+    content: " Larry Dan";
+  }
+  23.87% {
+    content: " Larry Da";
+  }
+  24.2% {
+    content: " Larry D";
+  }
+  24.53% {
+    content: " Larry";
+  }
+  24.86% {
+    content: " Larr";
+  }
+  25.19% {
+    content: " Lar";
+  }
+  25.52% {
+    content: " La";
+  }
+  25.85% {
+    content: " L";
+  }
+  /* 3.703 */
+  26.18% {
+    content: " ";
+  }
+  29.55% {
+    content: " ";
+  }
+  /* 0.46 */
+  30.01% {
+    content: " D";
+  }
+  30.47% {
+    content: " De";
+  }
+  30.93% {
+    content: " Dev";
+  }
+  31.39% {
+    content: " Deve";
+  }
+  31.85% {
+    content: " Devel";
+  }
+  32.31% {
+    content: " Develo";
+  }
+  32.77% {
+    content: " Develop";
+  }
+  33.23% {
+    content: " Develope";
+  }
+  /*  */
+  33.33% {
+    content: " Developer";
+  }
+  55.55% {
+    content: " Developer";
+  }
+  /* 0.46 */
+  56.01% {
+    content: " Develope";
+  }
+  56.47% {
+    content: " Develop";
+  }
+  56.93% {
+    content: " Develo";
+  }
+  57.39% {
+    content: " Devel";
+  }
+  57.85% {
+    content: " Deve";
+  }
+  58.31% {
+    content: " Dev";
+  }
+  58.77% {
+    content: " De";
+  }
+  59.23% {
+    content: " D";
+  }
+  /* 3.703 */
+  59.69% {
+    content: " ";
+  }
+  62.93% {
+    content: " ";
+  }
+  /* 0.52 */
+  63.45% {
+    content: " D";
+  }
+  63.97% {
+    content: " De";
+  }
+  64.49% {
+    content: " Des";
+  }
+  65.01% {
+    content: " Desi";
+  }
+  65.53% {
+    content: " Desig";
+  }
+  66.05% {
+    content: " Design";
+  }
+  66.57% {
+    content: " Designe";
+  }
+  /*  */
+  66.66% {
+    content: " Designer";
+  }
+  88.88% {
+    content: " Designer";
+  }
+  /*0.52  */
+  89.4% {
+    content: " Designe";
+  }
+  89.92% {
+    content: " Design";
+  }
+  90.44% {
+    content: " Desig";
+  }
+  90.96% {
+    content: " Desi";
+  }
+  91.48% {
+    content: " Des";
+  }
+  92% {
+    content: " De";
+  }
+  92.52% {
+    content: " D";
+  }
+  /* 3.703 */
+  93.04% {
+    content: " ";
+  }
+  96.22% {
+    content: " ";
+  }
+  /* 0.33 */
+  96.55% {
+    content: " L";
+  }
+  96.88% {
+    content: " La";
+  }
+  97.21% {
+    content: " Lar";
+  }
+  97.54% {
+    content: " Larr";
+  }
+  97.87% {
+    content: " Larry";
+  }
+  98.20% {
+    content: " Larry D";
+  }
+  98.53% {
+    content: " Larry Da";
+  }
+  98.86% {
+    content: " Larry Dan";
+  }
+  99.19% {
+    content: " Larry Dani";
+  }
+  99.52% {
+    content: " Larry Danie";
+  }
+  100% {
+    content: " Larry Daniels";
+  }
+}
+
+/* +++++++++++++++++ about +++++++++++++++ */
+#about .row {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+#about .img img {
+  width: 95%;
+  margin-left: 23px;
+  padding-bottom: 30px;
+}
+#about .img {
+  background-image: linear-gradient(#ffffff80, #ffffff00), url(../imgs/dots.png);
+}
+
+#about .item > h3 {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: Montserrat, sans-serif;
+}
+#about .item > span {
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+#about .item > span,
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  color: rgb(116, 129, 130);
+  line-height: 24px;
+}
+#about .item p > span {
+  font-weight: 700;
+}
+.progress,
+.progress-stacked {
+  --bs-progress-height: 25px;
+  --bs-progress-font-size: 0.75rem;
+  --bs-progress-bg: var(--bs-secondary-bg);
+  --bs-progress-border-radius: var(--bs-border-radius);
+  --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+  --bs-progress-bar-color: #fff;
+  --bs-progress-bar-bg: black;
+  --bs-progress-bar-transition: width 0.6s;
+}
+.progress {
+  margin-bottom: 30px;
+  border-radius: 7px;
+}
+.prog-skill {
+  width: 97%;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: Montserrat, sans-serif;
+}
+
+#about .item a {
+  padding: 11px 35px;
+}
+#about .item .link1 {
+  background-color: black;
+  color: #fff;
+  transition: all 1s;
+}
+#about .item .link1:hover {
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+}
+#about .item .link2 {
+  color: black;
+  background-color: #fff;
+  transition: all 0.6s;
+}
+#about .item .link2:hover {
+  color: #fff;
+  background-color: black;
+}
+@media (max-width: 768) {
+  #about .img img {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+  #about .row {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #about .links {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+/* +++++++++++++++++ services +++++++++++++++ */
+
+#services .inner {
+  background-color: white;
+  padding-top: 15px;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.226);
+}
+#services .inner span {
+  width: fit-content;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+#services .inner:hover span {
+  background-color: black;
+  color: #fff;
+}
+#services .inner span i {
+  position: absolute;
+  left: 31%;
+  top: 29%;
+}
+#services .inner h6 {
+  font-size: 18px;
+  font-weight: 800;
+}
+#services i {
+  font-size: 27px;
+}
+
+/* +++++++++++++++++ Work portfolio +++++++++++++++ */
+
+#portfolio .nav {
+  --bs-nav-link-color: var(--bs-black);
+  --bs-nav-link-hover-color: var(--bs-black);
+}
+#portfolio .nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: var(--bs-black);
+  --bs-nav-pills-link-active-bg: none;
+}
+#portfolio li {
+  position: relative;
+}
+#portfolio .active {
+  transition: all 1s;
+  opacity: 1;
+}
+#portfolio button.active::after {
+  right: 10px;
+}
+#portfolio button::after {
+  content: "";
+  height: 2px;
+  background-color: black;
+  left: 10px;
+  bottom: 5px;
+  position: absolute;
+  transition: right 0.5s;
+}
+#portfolio .container .inner {
+  overflow: hidden;
+}
+#portfolio .container .inner:hover .layer {
+  opacity: 1;
+  transform: translateY(0%);
+}
+#portfolio .container .inner .img {
+  position: relative;
+}
+#portfolio .container .inner .layer {
+  position: absolute;
+  background-color: white;
+  top: 8px;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+  opacity: 0;
+  transform: translateY(7%);
+  transition: opacity 0.4s, transform 0.5s;
+}
+#portfolio .container .icon {
+  display: flex;
+}
+#portfolio .container .inner .layer a {
+  display: block;
+  height: 27px;
+  width: 27px;
+  background-color: rgb(7, 7, 7);
+  border-radius: 50%;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+#portfolio .container .inner .layer a {
+  color: #fff;
+}
+#portfolio .container .inner .layer a:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
+#portfolio .container .inner .layer h6 {
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 38%;
+  top: 42%;
+  transform: translateY(-200%);
+  transition: all 0.7s;
+  opacity: 0;
+}
+#portfolio .container .inner:hover h6 {
+  transform: translateY(0%);
+  opacity: 1;
+}
+#portfolio .container .inner .layer .icon {
+  height: 50px;
+  position: absolute;
+  left: 42%;
+  top: 44%;
+  transform: translateY(29%);
+  opacity: 0;
+  transition: all 0.7s;
+}
+#portfolio .container .inner:hover .icon {
+  transform: translateY(28%);
+  opacity: 1;
+}
+#portfolio .inner {
+  margin-bottom: 30px;
+}
+
+.modal {
+  --bs-modal-zindex: 1055;
+  --bs-modal-width: 500px;
+  --bs-modal-color: ;
+  --bs-modal-bg: transparent;
+  --bs-modal-border-color: none;
+  --bs-modal-border-width: none;
+  --bs-modal-border-radius: var(--bs-border-radius-lg);
+  --bs-modal-box-shadow: var(--bs-box-shadow-sm);
+  --bs-modal-inner-border-radius: calc(
+    var(--bs-border-radius-lg) - (var(--bs-border-width))
+  );
+  --bs-modal-header-padding-x: 1rem;
+  --bs-modal-header-padding-y: 1rem;
+  --bs-modal-header-padding: 1rem 1rem;
+  --bs-modal-header-border-color: none;
+  --bs-modal-header-border-width: none;
+  --bs-modal-title-line-height: 1.5;
+
+  height: 100vh;
+}
+
+/* +++++++++++++++++ Clients +++++++++++++++ */
+#clients,
+#services,
+#team {
+  background-color: #f7f7f7;
+}
+
+#clients h3 {
+  font-size: 30px;
+}
+#clients .icon-cli p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.carousel-indicators {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+
+.img-css {
+  height: 90px;
+  width: 90px;
+}
+.carousel-item {
+  height: 290px;
+  margin-top: 20px;
+}
+.carousel-item p {
+  width: 800px;
+}
+.carousel-item span {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  color: rgb(116, 129, 130);
+  display: block;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(128, 128, 128, 0.63);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* +++++++++++++++++ Team +++++++++++++++ */
+
+#team .img {
+  position: relative;
+}
+
+#team .inner .layer {
+  position: absolute;
+  top: 80px;
+  bottom: 80px;
+  left: 80px;
+  right: 80px;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: rotatey(180deg);
+}
+
+#team .img img {
+  transition: transform 0.4s;
+}
+#team .img:hover img {
+  transform: scale(1.2);
+}
+#team .img:hover .layer {
+  transform: rotatey(360deg);
+  opacity: 1;
+  top: 8px;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+}
+#team .img:hover a {
+  opacity: 1;
+}
+#team a {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#team a:hover i {
+  color: black;
+}
+
+#team a:hover {
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
+}
+#team .text-team {
+  background-color: rgb(112, 111, 111);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: transform 0.4s;
+}
+/* #team .text-team:hover .layer {
+  transform: rotatey(360deg);
+  opacity: 1;
+  top: 8px;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+}
+#team .text-team:hover img {
+  transform: scale(1);
+} */
+#team .text-team h4 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 28px;
+}
+#team .text-team h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  font-family: Montserrat, sans-serif;
+}
+
+@media (max-width: 1200px) {
+  #team .layer a {
+    margin: 0px;
+    margin-top: 30px;
+  }
+}
+
+/* +++++++++++++++++ contact +++++++++++++++ */
+
+#contact .item h6 {
+  font-weight: 700;
+  line-height: 18px;
+  font-family: Montserrat, sans-serif;
+}
+
+#contact .item {
+  margin-bottom: 100px;
+}
+
+#contact i {
+  font-size: 25px;
+  padding: 25px 27px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  background-color: #f4f4f4;
+}
+#contact .item:hover i {
+  color: #fff;
+  background-color: black;
+}
+
+#contact input {
+  border: transparent;
+  background-color: #f4f4f4;
+}
+
+#contact .mess {
+  padding-bottom: 170px;
+}
+
+/* #contact .buton {
+  padding: 11px 47px;
+  background-color: black;
+  color: #fff;
+  transition: all 0.5s;
+}
+#contact .supmit-btn:hover input {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+} */
+
+.btn-dark {
+  --bs-btn-hover-color: var(--main-font-color-34);
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #212529;
+  --bs-btn-active-color: var(--main-font-color-34);
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #212529;
+}
+
+#contact .supmit-btn {
+  width: 11.8%;
+  height: 47px;
+}
+#contact input:focus {
+  border-color: #fff;
+  background-color: #f4f4f4;
+  box-shadow: none;
+  outline: 0;
+}
+
+/* +++++++++++++++++ footer +++++++++++++++ */
+footer {
+  background-color: rgba(0, 0, 0, 0.877);
+  color: rgb(116, 129, 130);
+  font-size: 13px;
+  line-height: 21px;
+}
